@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    --bg-col: #000014;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+    
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    background-image: url(images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 100vh;
+}
+
+.main-heading {
+    text-align: center;
+    font-size: 40px;
+    padding: 30px;
+    color: white;
+}
+
+.calculator-body {
+    padding: 10px 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.txt-box{
+    background-color: #ffffff15;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    transition: 0.4s ease;
+    color: white;
+    font-size: 24px;
+}
+
+.operations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.op-btn {
+    margin: 30px 0;
+    color: white;
+    font-size: 60px;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px 70px;
+    background-color: #ffffff15;
+    transition: 0.4s ease;
+    box-shadow: 0 0 10px white;
+    cursor: pointer;
+}
+
+.op-btn:hover {
+    background-color: white;
+    color: var(--bg-col);
+    transform: scale(1.2);
+}
+
+.op-btn:active {
+    transform: scale(0.9);
+}
+
+.clear-btn {
+    margin: 30px 0;
+    color: white;
+    font-size: 60px;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px 70px;
+    background-color: #ffffff15;
+    transition: 0.4s ease;
+    box-shadow: 0 0 10px white;
+    cursor: pointer;
+}
+
+.clear-btn:hover {
+    background-color: white;
+    color: var(--bg-col);
+}
+
+.clear-btn:active {
+    transform: scale(0.9);
+}
+
+.txt-box:focus {
+    box-shadow: 0 0 10px white;
+}
+
+.res-box {
+    margin: 30px 0;
+    color: var(--bg-col);
+    font-size: 45px;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px white;
+}
+.res-txt {
+    margin: 30px 0;
+    color: var(--bg-col);
+    font-size: 45px;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px white;
+}
+
+
+.res {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
