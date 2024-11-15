@@ -31,16 +31,18 @@ body {
 }
 
 .calculator-body {
-    padding: 10px 200px;
+    padding: 10px 0;
+    margin: 0 auto;
+    width: 80vw;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .txt-box{
     background-color: #ffffff15;
     padding: 20px;
     border-radius: 30px;
-    margin-bottom: 20px;
     border: 2px solid white;
     transition: 0.4s ease;
     color: white;
@@ -51,17 +53,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 30px;
 }
 
 .op-btn {
     margin: 30px 0;
     color: white;
-    font-size: 60px;
+    font-size: 3vmax;
     border: 2px solid white;
     border-radius: 30px;
-    padding: 10px 70px;
+    padding: 10px auto;
+    width: 100%;
     background-color: #ffffff15;
     transition: 0.4s ease;
     box-shadow: 0 0 10px white;
@@ -113,6 +116,7 @@ body {
     padding: 10px;
     background-color: white;
     box-shadow: 0 0 10px white;
+    width: 100%;
 }
 .res-txt {
     margin: 30px 0;
@@ -123,14 +127,15 @@ body {
     padding: 10px;
     background-color: white;
     box-shadow: 0 0 10px white;
+    width: 20%;
+    text-align: center;
 }
 
 
 .res {
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-
+    gap: 20px;
 }

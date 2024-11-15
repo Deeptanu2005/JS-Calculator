@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Calculator</title>
-        <link rel="stylesheet" href="style.css">
-        <script language="javascript" src="script.js"></script>
-    </head>
-    <body>
-         <h1 class="main-heading">Simple Calculator</h1>
-            <form name="calForm" class="calculator-body">
-            <input type="text" name="val1" class="txt-box" placeholder="Enter 1st Value" required>
-            <input type="text" name="val2" class="txt-box" placeholder="Enter 2nd Value" required>
-            <div class="operations">
-                <button class="op-btn" type="button" onclick="sum();">+</button>
-                <button class="op-btn" type="button" onclick="subtract();">-</button>
-                <button class="op-btn" type="button" onclick="multiply();">*</button>
-                <button class="op-btn" type="button" onclick="divide();">/</button>
-                <button class="op-btn" type="button" onclick="modulus();">%</button>
-            </div>
-            <button class="clear-btn" type="reset" onclick="clearAll()">Clear</button>
-            <div class="res">
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script language="javascript" src="script.js"></script>
+</head>
+
+<body>
+    <h1 class="main-heading">Simple Calculator</h1>
+    <form name="calForm" class="calculator-body">
+        <input type="text" name="val1" class="txt-box" placeholder="Enter 1st Value" required>
+        <input type="text" name="val2" class="txt-box" placeholder="Enter 2nd Value" required>
+        <div class="operations">
+            <button class="op-btn" type="button" onclick="sum();">+</button>
+            <button class="op-btn" type="button" onclick="subtract();">-</button>
+            <button class="op-btn" type="button" onclick="multiply();">*</button>
+            <button class="op-btn" type="button" onclick="divide();">/</button>
+            <button class="op-btn" type="button" onclick="modulus();">%</button>
+        </div>
+        <button class="clear-btn" type="reset" onclick="clearAll()">Clear</button>
+        <div class="res">
             <p class="res-txt"> Result:</p>
             <input type="text" name="result" class="res-box" value="0" readonly>
-            </div>
-        </form>
-    </body>
+        </div>
+    </form>
+</body>
+
 </html>
